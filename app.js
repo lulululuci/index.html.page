@@ -32,6 +32,40 @@ productos.forEach(p => {
     contenedor.appendChild(card);
 });
 
+#usuario, #carrito {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#usuario form, #carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#usuario input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#usuario button, #carrito button {
+    padding: 10px;
+    border: none;
+    background: #03105c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito ul {
+    list-style: none;
+    padding: 0;
+}
+
 
 
 
