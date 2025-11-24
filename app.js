@@ -31,24 +31,3 @@ productos.forEach(p => {
 
     contenedor.appendChild(card);
 });
-
-#usuario input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-#usuario button, #carrito button {
-     padding: 10px;
-    border: none;
-    background: #03105c;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#carrito ul {
-    list-style: none;
-    padding: 0;
-}
-
