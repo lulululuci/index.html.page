@@ -32,20 +32,6 @@ productos.forEach(p => {
     contenedor.appendChild(card);
 });
 
-#usuario, #carrito {
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-}
-
-#usuario form, #carrito {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 #usuario input {
     padding: 10px;
     border-radius: 5px;
@@ -65,3 +51,4 @@ productos.forEach(p => {
     list-style: none;
     padding: 0;
 }
+
