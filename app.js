@@ -53,7 +53,7 @@ productos.forEach(p => {
 }
 
 #usuario button, #carrito button {
-    padding: 10px;
+     padding: 10px;
     border: none;
     background: #03105c;
     color: white;
@@ -65,8 +65,3 @@ productos.forEach(p => {
     list-style: none;
     padding: 0;
 }
-
-
-
-
-
