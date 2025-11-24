@@ -1,0 +1,104 @@
+<!--estructura del codigo
+/mi-tienda-bici
+ |– index.html
+ |– style.css
+ |– app.js
+-->
+<!--estructura de la tienda-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Repuestos de Bicicleta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Repuestos de Bicicleta</h1>
+    </header>
+
+    <section id="productos"></section>
+
+    <footer>
+        <p>© 2025 Mi tienda de bicis</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!--diseño de la tienda-->
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+<!--productos y muestras-->
+const productos = [
+    {
+        nombre: "Cadena Shimano",
+        precio: 25,
+        imagen: "https://via.placeholder.com/250x150"
+    },
+    {
+        nombre: "Cámara 29'",
+        precio: 10,
+        imagen: "https://via.placeholder.com/250x150"
+    },
+    {
+        nombre: "Cubierta MTB 29''",
+        precio: 35,
+        imagen: "https://via.placeholder.com/250x150"
+    }
+];
+
+const contenedor = document.getElementById("productos");
+
+productos.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+        <img src="${p.imagen}" alt="${p.nombre}">
+        <h3>${p.nombre}</h3>
+        <p>Precio: $${p.precio}</p>
+        <button>Comprar</button>
+    `;
+
+    contenedor.appendChild(card);
+});
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
